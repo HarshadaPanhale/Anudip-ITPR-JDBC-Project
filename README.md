@@ -4,7 +4,7 @@ import java.util.Scanner;
 class BookstoreManagement {
     static final String DB_URL = "jdbc:mysql://localhost:3306/bookstore_db";
     static final String USER = "root";
-    static final String PASS = "Harshu@123"; // change this
+    static final String PASS = "Harshu@123"; 
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
