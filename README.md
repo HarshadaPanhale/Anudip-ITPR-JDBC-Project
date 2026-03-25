@@ -10,7 +10,7 @@ class BookstoreManagement {
         Scanner sc = new Scanner(System.in);
 
         try (Connection con = DriverManager.getConnection(DB_URL, USER, PASS)) {
-            System.out.println("✅ Connected to Database!");
+            System.out.println(" Connected to Database!");
 
             while (true) {
                 System.out.println("\n=== Bookstore Management System ===");
@@ -60,7 +60,7 @@ class BookstoreManagement {
         ps.setInt(4, quantity);
         ps.executeUpdate();
 
-        System.out.println("✅ Book added successfully!");
+        System.out.println(" Book added successfully!");
     }
 
     // View all books
@@ -94,9 +94,9 @@ class BookstoreManagement {
 
         int rows = ps.executeUpdate();
         if (rows > 0)
-            System.out.println("✅ Book updated successfully!");
+            System.out.println(" Book updated successfully!");
         else
-            System.out.println("❌ Book ID not found!");
+            System.out.println(" Book ID not found!");
     }
 
     // Delete a book
@@ -110,9 +110,9 @@ class BookstoreManagement {
         int rows = ps.executeUpdate();
 
         if (rows > 0)
-            System.out.println("✅ Book deleted successfully!");
+            System.out.println(" Book deleted successfully!");
         else
-            System.out.println("❌ Book ID not found!");
+            System.out.println(" Book ID not found!");
     }
 }
 
